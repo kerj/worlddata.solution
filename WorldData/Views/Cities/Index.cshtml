@@ -19,10 +19,11 @@
     }
     @if(Model.Count != 0)
     {
+      <h4>Names of cities</h4>
       @foreach (City city in Model)
       {
-        <li>@city.GetCityName()</li>
-        <li>@city.GetCityPopulation()</li>
+        <li>Name: @city.GetCityName()</li>
+        <li>Population: @city.GetCityPopulation()</li><br>
       }
     }
     </ul>

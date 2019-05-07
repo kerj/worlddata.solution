@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>To Do List</h1>
+      <h1>List of Countries in the world</h1>
       <em>Pick a country to see to do citys</em>
     </div>
     <ul>
@@ -22,9 +22,9 @@
       @foreach (var country in Model)
       {
         <li>@country.CountryName</li>
-        <li>@country.CountryPopulation</li>
-        <li>@country.CountryExpectancy</li>
-        <li><a href="/countries/@country.CountryCode" class="btn btn-dark">More Info</a></li>
+        <li>Population: @country.CountryPopulation</li>
+        <li>Life Expectancy: @country.CountryExpectancy</li>
+        <li><a href="/countries/@country.CountryCode" class="btn btn-dark">More Info</a></li><br>
 
       }
     }

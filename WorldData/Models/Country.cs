@@ -20,7 +20,6 @@ namespace WorldData.Models
           _instances.Add(this);
       }
 
-
       public string CountryName { get => _countryName; set => _countryName = value;}
       public int CountryPopulation { get => _countryPopulation; set => _countryPopulation = value;}
       public float CountryExpectancy { get => _countryExpectancy; set => _countryExpectancy = value;}
